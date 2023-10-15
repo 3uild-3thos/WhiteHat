@@ -1,0 +1,17 @@
+[features]
+seeds = true
+skip-lint = false
+[programs.localnet]
+whitehat = "HATNBZtwk8uLUZeSuYK8QYwWzk1kT5didcGFs9a6GtTW"
+[programs.devnet]
+whitehat = "HATNBZtwk8uLUZeSuYK8QYwWzk1kT5didcGFs9a6GtTW"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/dev/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
